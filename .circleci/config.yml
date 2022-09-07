@@ -89,6 +89,7 @@ jobs:
       # Uncomment the line below if you want to fail the current step
       - run: return 1
       - destroy_environment
+      # Executes the bucket.yml - Deploy an S3 bucket, and interface with that bucket to synchronize the files between local and the bucket.
   create_and_deploy_front_end:
     docker:
       - image: amazon/aws-cli
